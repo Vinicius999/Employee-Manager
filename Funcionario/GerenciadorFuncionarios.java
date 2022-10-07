@@ -16,11 +16,11 @@ public class GerenciadorFuncionarios {
         lista.add(f);
     }
 
-    public void RemoverFuncionario(int matricula) {
+    public void removerFuncionario(int matricula) {
         for (Funcionario f: lista) {
             if (matricula == f.getMatricula()) {
                 lista.remove(f);
-                break;
+                return;
             }
         }
         System.out.println("Funcionario não encontrado");
