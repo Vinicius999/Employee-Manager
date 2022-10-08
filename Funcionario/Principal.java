@@ -13,13 +13,12 @@ public class Principal {
         gerenciador.AddFuncionario(a01);
         
         System.out.println("\nTestando funções 'AddFuncionario' e 'imprimirFuncionario':");
-        System.out.println(gerenciador.imprimirFuncionario(11));
+        System.out.println(gerenciador.imprimirFuncionario(11111));
 
-        System.out.println("\nTestando funções 'folhaSalarial', 'imprimirTodos' e 'RemoverFuncionario':");
+        System.out.println("\nTestando funções 'folhaSalarial', 'imprimirTodos' e 'RemoverFuncionario':\n");
         gerenciador.imprimirTodos();
-        System.out.println(gerenciador.folhaSalarial());
+        System.out.printf("Folha salarial: R$%.2f\n", gerenciador.folhaSalarial());
         gerenciador.removerFuncionario(22222);
         gerenciador.imprimirTodos();
-            
     }
 }
